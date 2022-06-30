@@ -26,9 +26,9 @@ int numQuart(int x, int y)
     if(x > 0 && y < 0) result = 4;
     return result;
 }
-Console.WriteLine("inter x ");
+Console.WriteLine("input x ");
 int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("inter y ");
+Console.WriteLine("input y ");
 int y = Convert.ToInt32(Console.ReadLine());
 Console.Write(numQuart(x, y));
 */
