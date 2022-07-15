@@ -75,10 +75,27 @@ int[,] Quad (int[,] array)
              array[i,j] = array[i,j] * array[i,j];
     return array;         
 }
-
-int myArray = CreateRandom2dArray(m,n,min,max);
+/*
+int[,] myArray = CreateRandom2dArray(m,n,min,max);
 Show2dArray(myArray);
 Console.WriteLine();
 myArray = Quad(myArray);
 Show2dArray(myArray);
+*/
 
+// Задайте думерный массив размерами m на n, каждый элемент в массиве находится по формуле Aij = i + j.
+// Выведите полученный рензультат на экран.
+
+int[,] Create2dArray(int rows, int columns, int minValue, int maxValue)
+{
+    int[,] newArray = new int[rows,columns];
+
+    for(int i = 0; i < rows; i++)
+       for(int j = 0; j< columns; j++)
+           newArray[i,j] = i + j;
+    
+    return newArray;        
+}
+
+int[,] myArray = Create2dArray(m,n,min,max);
+Show2dArray(myArray);
